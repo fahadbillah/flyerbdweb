@@ -1,5 +1,28 @@
 /* app css stylesheet */
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+a {
+  margin-bottom: 0px !important;
+}
+
+.tBlock{
+  position: absolute; 
+  top: 70px; 
+  left: 20px; 
+  width: 100%; 
+}
+
+.box {
+  padding: 0px 0px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
