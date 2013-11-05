@@ -2,8 +2,8 @@
 
 /* Filters */
 
-angular.module('flyerBDFilters', []).
-  filter('interpolate', ['version', function(version) {
+angular.module('flyerBDFilters', [])
+  .filter('interpolate', ['version', function(version) {
     return function(text) {
       return String(text).replace(/\%VERSION\%/mg, version);
     };
@@ -11,10 +11,9 @@ angular.module('flyerBDFilters', []).
   .filter('navActive', ['$location', function($location){
   	return function(url){
   		url = url.substr(1);
-  		//alert(url);
   		if(url===$location.path())
   			return 'active';
   		else
   			return '';
-  	}
+  	};
   }]);

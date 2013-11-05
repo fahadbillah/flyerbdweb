@@ -1,0 +1,58 @@
+[
+{
+	"id":1,
+	"name":"Prothom Alo",
+	"json":"prothomAlo",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":2,
+	"name":"Daily Star",
+	"json":"dailyStar",
+	"language":"english",
+	"origin":"local"
+},
+{
+	"id":3,
+	"name":"BDNews24",
+	"json":"BDNews24",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":4,
+	"name":"Inquilab",
+	"json":"inqilab",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":5,
+	"name":"Kaler Kantho",
+	"json":"kalerKantho",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":6,
+	"name":"Noya Digonto",
+	"json":"noyaDigonto",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":7,
+	"name":"Somokal",
+	"json":"somokal",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":8,
+	"name":"BBC",
+	"json":"BBC",
+	"language":"bangla",
+	"origin":"foreign"
+}
+]
