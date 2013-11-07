@@ -24,8 +24,30 @@ angular.module('flyerBDServices', []).
         else
           spanArr.push(rand);
       }
-      console.log(spanArr);
-      //var spanArray = [2,3,3,4,4,4,2,2,4,5,3,3,3,3,3,2,2,2,4];
       return spanArr;
   	};
-  });
+  })
+  .factory('base64', ['$window', function($window) {
+    return {
+      name: 'Base64',
+      readonly: false,
+      encode: function(input) {
+        return $window.btoa(input);
+      },
+      decode: function(input) {
+        return $window.atob(input);
+      }
+    };
+  }])
+  .factory('utf8', ['$window', function($window) {
+    return {
+      name: 'utf8',
+      readonly: false,
+      encode: function(input) {
+        return $window.unescape(encodeURIComponent(input));
+      },
+      decode: function(input) {
+        return $window.decodeURIComponent(escape(input));
+      }
+    };
+  }]);

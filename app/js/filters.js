@@ -16,4 +16,8 @@ angular.module('flyerBDFilters', [])
   		else
   			return '';
   	};
-  }]);
+  }])
+  .filter('holderFilter', function(input){
+    if(input=='http://images1.wikia.nocookie.net/__cb20100722190004/logopedia/images/thumb/b/b6/SNCB_B_logo.svg/120px-SNCB_B_logo.svg.png')
+      return 'img/flyerBDHolder.jpg';
+  });

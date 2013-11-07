@@ -1,5 +1,9 @@
 <div>
-	<h3>title</h3>
-	<img src="">
-	<p>details</p>
+	<h3 class='singlePostTitle'> {{utf8.decode(base64.decode(news.title))}} </h3>
+	<div class='singlePostImg'>
+		<img class='img-responsive' src="{{base64.decode(news.newsImage)}}">
+	</div>
+	<div class='singlePostDetail'>
+		<p>  {{utf8.decode(base64.decode(news.detail))}}  </p>
+	</div>
 </div>

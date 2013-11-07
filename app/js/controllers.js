@@ -12,7 +12,7 @@ angular.module('flyerBDControllers', [])
 	  $scope.holderSize = 200;
 	  $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', function($scope,$http,$routeParams,getRandomSpan) {
+  .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', function($scope,$http,$routeParams,getRandomSpan,base64,utf8) {
     $scope.json = $routeParams["site"].substr(1);
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.news = data;
@@ -20,20 +20,19 @@ angular.module('flyerBDControllers', [])
       $scope.spanSizes = getRandomSpan($scope.length);
       console.log($scope.spanSizes);
     });
+    $scope.base64 = base64;
+    $scope.utf8 = utf8;
     $scope.holderSize = 150;
     $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', function($scope,$http,$routeParams) {
+  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', 'base64', 'utf8', function($scope,$http,$routeParams,base64,utf8) {
     $scope.json = $routeParams["site"].substr(1);
-    $scope.postID = $routeParams["post"].substr(1);
+    var postID = $routeParams["post"].substr(1);
     $http.get('news/'+$scope.json+".json").success(function(data) {
-      $scope.news = data;
-      $scope.length = data.length;
-      $scope.spanSizes = getRandomSpan($scope.length);
-      console.log($scope.spanSizes);
+      $scope.news = data[postID];
     });
-    $scope.holderSize = 150;
-    $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
+    $scope.base64 = base64;
+    $scope.utf8 = utf8;
   }])
   .controller('NavBarCtrl',['$scope', function($scope){
   	$scope.navs = [
