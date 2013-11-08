@@ -6,6 +6,19 @@ html {
 
 body {
   min-height: 100%;
+  /*background-color: #d4d7d3;*/
+  background-image: url(../img/backGround.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.view{
+  margin-top: 65px;
+}
+
+.navbar{
+  background-color: #03DB40;
+  opacity: 0.8;
 }
 
 a {
@@ -45,7 +58,8 @@ strong{
 }
 
 .singlePostTitle{
-  padding: 0px 10px;
+  padding: 1px 10px;
+  background-color: rgba(255,255,255,0.9);
 }
 
 .singlePostImg{
@@ -54,8 +68,13 @@ strong{
 }
 
 .singlePostDetail{
-  padding: 5px;
+  padding: 10px;
   text-align: justify;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.logos {
+  vertical-align:middle;
 }
 
 .tBlock{
@@ -67,6 +86,7 @@ strong{
 
 .box {
   padding: 0px 0px;
+  vertical-align: middle !important;
 }
 
 .menu {
@@ -96,6 +116,10 @@ strong{
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.thumbnail{
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .siteLinks{
