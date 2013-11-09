@@ -50,23 +50,27 @@
 			//echo $pic."<br>";
 		}
 
-	//the detail
+		//the detail
+		$txt_beta="";
 		$detail1 = $singlePost->find('#newsDtl p');
 		$detail2 = $singlePost->find('#newsDtl div');
 		$Dtest1=count($detail1);
-
+		$Dtest2=count($detail2);
 		if ($Dtest1==0)
 		{
 			$detail=$detail2;
 		}
-		else
+		elseif($Dtest2==0)
 		{
 			$detail=$detail1;
 		}
+
 		foreach($detail as $elemet3){
-			$txt=base64_encode($elemet3->plaintext);
-			//echo $txt;
+			$txt_beta.=$elemet3->plaintext;
+			
 		}
+		$txt=base64_encode($txt_beta);
+		
 		$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 		array_push($AllContent, $temparr);
 		$counter++;

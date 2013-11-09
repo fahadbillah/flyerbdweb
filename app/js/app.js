@@ -14,7 +14,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/likes', {templateUrl: 'partials/likes.html', controller: 'LikesCtrl'});
   $routeProvider.when('/settings', {templateUrl: 'partials/settings.html', controller: 'SettingsCtrl'});
   $routeProvider.when('/target', {templateUrl: 'partials/settings.html', controller: 'SettingsCtrl'});
-  $routeProvider.when('/singleSite/:site', {templateUrl: 'partials/singleSite.html', controller: 'SingleSiteCtrl'});
-  $routeProvider.when('/singleSite/:site/singlePost/:post', {templateUrl: 'partials/singlePost.html', controller: 'SinglePostCtrl'});
+  $routeProvider.when('/singleSite/:site/:id', {templateUrl: 'partials/singleSite.html', controller: 'SingleSiteCtrl'});
+  $routeProvider.when('/singleSite/:site/:id/singlePost/:post', {templateUrl: 'partials/singlePost.html', controller: 'SinglePostCtrl'});
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);

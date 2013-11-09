@@ -1,7 +1,8 @@
+<!-- <div class="well"> {{siteID}} </div> -->
 <div class="motherBox" ng-repeat="n in news">
   <div class="col-md-3 box"> <!-- {{spanSizes[$index]}} -->
     <div class="listTitleBG"></div>
-  	<a href="#/singleSite/:{{json}}/singlePost/:{{n.id-1}}" class="thumbnail">
+  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{n.id-1}}" class="thumbnail">
       <img src="{{base64.decode(news[$index].newsImage)}}" height="200px" alt="100x100" class="listImg">
       <span class='listTitle'><strong>{{utf8.decode(base64.decode(news[$index].title))}}</strong></span>
     </a>

@@ -29,6 +29,7 @@ foreach($html->find('.feature-home a')  as $e)
 //echo $FullLink."<br>";
 
 	array_push($allLink, $FullLink);
+
 }
 $allLink = array_unique($allLink);			
 $counter = 1;

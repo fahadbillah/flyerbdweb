@@ -50,4 +50,9 @@ angular.module('flyerBDServices', []).
         return $window.decodeURIComponent(escape(input));
       }
     };
+  }])
+  .factory('allSiteList', ['$http', function($http) {
+    $http.get('news/allSites.json').success(function(data) {
+      return data;
+    });
   }]);

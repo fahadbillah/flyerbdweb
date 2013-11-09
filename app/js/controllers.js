@@ -12,7 +12,9 @@ angular.module('flyerBDControllers', [])
 	  $scope.holderSize = 200;
 	  $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', function($scope,$http,$routeParams,getRandomSpan,base64,utf8) {
+  .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', 'allSiteList', function($scope,$http,$routeParams,getRandomSpan,base64,utf8,allSiteList) {
+    //$scope.allSiteList = allSiteList();
+    $scope.siteID = $routeParams["id"].substr(1);
     $scope.json = $routeParams["site"].substr(1);
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.news = data;

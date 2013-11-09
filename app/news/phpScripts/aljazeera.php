@@ -15,8 +15,7 @@ foreach($html->find('.stories-container table a') as $e)
 		array_push($allLink, $full_link);
 
 	}
-} 
-$allLink = array_unique($allLink);
+}
 
 $counter = 1;
 foreach ($allLink as $link) 

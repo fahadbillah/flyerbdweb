@@ -39,16 +39,11 @@ $AllContent = array();
 		if (strpos($pic_beta, ".jpg"))
 		{
 
-			$pic=base64_encode($elemet4->src);
+			$pic=base64_encode($pic_beta);
 
 			break;
 		}
-		else
-		{
-			$pic=base64_encode("img/flyerBDHolder.jpg");
-		    break;
-		//echo $pic."<br>";
-		}
+		
 
 	}
 
