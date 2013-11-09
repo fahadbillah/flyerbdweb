@@ -27,7 +27,10 @@ $AllContent = array();
 //the title
 		$title = $singlePost->find('.headline6 bold mb5 mb10,h1');
 		foreach($title as $elemet2){
-			$newsTitle=base64_encode($elemet2->plaintext);
+			//$newsTitle=base64_encode($elemet2->plaintext);
+			$titleBeta=$elemet2->plaintext;
+			$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
+			$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 //echo $newsTitle."<br>";
 		}
 //Single post image
@@ -50,12 +53,13 @@ $AllContent = array();
 
 //the detail
 	$detail = $singlePost->find('.post-entry mb10,p');
-	$txt_beta="";
+	$txt_beta1="";
 	foreach($detail as $elemet3){
 		$dtl=$elemet3->plaintext;
-		$txt_beta.=$dtl;
+		$txt_beta1.=$dtl;
 	}
-	$txt=base64_encode($txt_beta);
+	$txt_beta2=str_replace("&nbsp;" , "" , $txt_beta1);
+	$txt=base64_encode($txt_beta2);
 	$temparr= array('id'=>$counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 //echo "<br>".$txt;
 	$counter++;

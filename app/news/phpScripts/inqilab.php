@@ -29,7 +29,6 @@ foreach($html->find('.feature-home a')  as $e)
 //echo $FullLink."<br>";
 
 	array_push($allLink, $FullLink);
-
 }
 $allLink = array_unique($allLink);			
 $counter = 1;
@@ -39,8 +38,10 @@ foreach ($allLink as $link) {
 //the title
 	$title = $singlePost->find(".DetailsHeading");
 	foreach($title as $elemet2){
-		$newsTitle=base64_encode($elemet2->plaintext);
-//echo $newsTitle."<br>";
+		//$newsTitle=base64_encode($elemet2->plaintext);
+		$titleBeta1=$elemet2->plaintext;
+		$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta1);
+		$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 	}
 
 //Single post image
@@ -64,8 +65,9 @@ foreach ($allLink as $link) {
 	$detail = $singlePost->find('#f');
 
 	foreach($detail as $elemet3){
-		$txt=base64_encode($elemet3->plaintext);
-//echo $txt;
+		$txt_beta1=$elemet3->plaintext;
+		$txt_beta2=str_replace( "&nbsp;" , "" , $titleBeta1);
+		$txt=base64_encode($txt_beta2);
 	}
 	$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 	array_push($AllContent, $temparr);

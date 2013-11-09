@@ -15,7 +15,8 @@ foreach($html->find('.stories-container table a') as $e)
 		array_push($allLink, $full_link);
 
 	}
-}
+} 
+$allLink = array_unique($allLink);
 
 $counter = 1;
 foreach ($allLink as $link) 
@@ -27,7 +28,9 @@ foreach ($allLink as $link)
 	$title = $singlePost->find('h1');
 	foreach($title as $elemet2)
 	{
-		$newsTitle=base64_encode($elemet2->plaintext); ########## checkpoint #########
+		$titleBeta=$elemet2->plaintext;
+		$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
+		$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 	}
 
 //timestamp
@@ -75,7 +78,8 @@ foreach($detail as $elemet3){
 }
 $pos2 = strrpos($txt_beta, ".")+1;
 $filtDetail = substr($txt_beta, 0, $pos2);
-$txt=base64_encode($filtDetail); ########## checkpoint #########
+$filtDetail2=str_replace ( "&nbsp;" , "" , $filtDetail);
+$txt=base64_encode($filtDetail2); ########## checkpoint #########
 
 $temparr= array('id'=>$counter,'title' => $newsTitle,'pubDate'=>$timeStamp, 'newsImage'=>$pic, 'detail'=>$txt);
 $counter++;

@@ -25,11 +25,12 @@ foreach ($allLink as $links)
     	$singlePost = file_get_html($links);
         //var_dump($singlePost->find('.title_container'));
 
-    	$title = $singlePost->find('.title_container h1');
+    	$newsTitle_beta1 = $singlePost->find('.title_container h1');
 
 
-        $newTitle = base64_encode($title[0]->plaintext); //because " find('.title_container h1') " returns an array
-        //var_dump($newTitle);
+        $newsTitle_beta2 = $newsTitle_beta1[0]->plaintext;
+        $newsTitle_beta3=str_replace ( "&nbsp;" , "" , $newsTitle_beta2);
+        $newsTitle=base64_encode($newsTitle_beta3);
 
         //image section is not showing the src despite having to visible error
         $image = $singlePost->find('.jw_detail_content_holder img');
@@ -56,8 +57,10 @@ foreach ($allLink as $links)
         
         //detail news
         $detail = $singlePost->find('.jw_detail_content_holder');
-        $txt= base64_encode($detail[0]->plaintext);
-        //var_dump($txt);
+        $txt_beta1= $detail[0]->plaintext;
+        $txt_beta2=str_replace ( "&nbsp;" , "" , $txt_beta1);
+        $txt=base64_encode($txt_beta2);
+        
         $temparr= array('id' => $counter, 'title' => $newTitle, 'newsImage'=>$pic, 'detail'=>$txt);
         //print_r($temparr);
         array_push($AllContent, $temparr);
@@ -70,46 +73,5 @@ $fp = fopen('prothomAlo.json', 'w');
 fwrite($fp,json_encode($AllContent));
 fclose($fp);
 
-/*$fp2 = fopen('prothomAlo.json', 'r');
-//fwrite($fp,json_encode(utf8json($AllContent)));
-$vv = fread($fp2,filesize('prothomAlo.json'));
-$obj1=json_decode($vv);
-
-echo base64_decode($obj1[0]->title);
-echo "<br>";
-echo base64_decode($obj1[0]->newsImage);
-echo "<br>";
-echo base64_decode($obj1[0]->detail);
-echo "<br>";
-fclose($fp2);*/
-//json_encode(utf8json($dataArray));
-
-
-/*echo $temparr['title'];
-echo $temparr['newsImage'];
-echo "<br>";
-echo $temparr['detail'];
-
-//var_dump($temparr);
-*/
-//var_dump($AllContent);
-
-
-
-//$hell =serialize($temparr);
-
-
-
-
-
-/*$json = json_encode($temparr);    
-$fp = fopen('prothomAlo.json', 'w');
-//var_dump($json);
-//fwrite($fp, json_encode($temparr));
-$s = file_put_contents('prothomAlo.json');
-echo json_encode($s);
-file_put_contents('prothomAlo.json',json_encode($temparr));
-fclose($fp);
-*/
 
 ?>

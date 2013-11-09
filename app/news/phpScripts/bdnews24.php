@@ -25,8 +25,10 @@ foreach ($allLink as $links)
 {	
 
 	$singlePost = file_get_html($links);
-	$title = $singlePost->find('.print-only');
-	$newsTitle =base64_encode($title[0]->plaintext); // important checkpoint
+	$newsTitle_beta1 = $singlePost->find('.print-only');
+	$newsTitle_beta2 =$newsTitle_beta1[0]->plaintext; // important checkpoint
+	$newsTitle_beta3=str_replace ( "&nbsp;" , "" , $newsTitle_beta2);
+	$newsTitle=base64_encode($newsTitle_beta3);
 	//echo "<br>";
 	//echo $newTitle;
 
@@ -80,7 +82,8 @@ foreach ($allLink as $links)
 			$txt2= $i->plaintext;
 			$finalText.=$txt2;
 		}
-		$txt=base64_encode($finalText); // important checkpoint
+		$txt_beta=str_replace ( "&nbsp;" , "" , $finalText);
+		$txt=base64_encode($txt_beta); // important checkpoint
 		$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 		//echo $newsTitle."<br>";
 		//echo $pic."<br>";

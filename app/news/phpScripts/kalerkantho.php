@@ -35,8 +35,9 @@ foreach ($allLink as $link)
 	$title2 = $singlePost->find("title");
 	foreach($title2 as $elemet2){
 		$newsTitle2=$elemet2->plaintext;
+		$newsTitle4=str_replace ( "&nbsp;" , "" , $newsTitle2);
 
-		$newsTitle3 = strpos($newsTitle2, "|");
+		$newsTitle3 = strpos($newsTitle4, "|");
 		$newsTitle = base64_encode(substr($newsTitle2, 0, $newsTitle3));
 		
 		//echo $newsTitle."<br>";
@@ -60,13 +61,14 @@ foreach ($allLink as $link)
 	}
 //the detail
 	$detail = $singlePost->find("#newsDtl p");
-	$txt="";
+	$txt_2="";
 	foreach($detail as $elemet3)
 	{
-		$Dtl=$elemet3->plaintext;
-		$txt.=base64_encode($Dtl);
+		$Dtl_beta1=$elemet3->plaintext;
+		$txt_2.=$Dtl_beta1;
 	}
-	//echo "<br>".$txt;
+	$txt_beta2=str_replace( "&nbsp;" , "" , $txt_2);
+	$txt=base64_encode($txt_beta2);
 	$temparr= array('id' => $counter,'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 	array_push($AllContent, $temparr);
 	$counter++;
