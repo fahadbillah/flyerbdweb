@@ -3,6 +3,7 @@
 	"id":1,
 	"name":"Prothom Alo",
 	"json":"prothomAlo",
+	"active":true,
 	"logo":"prothomAlo.png",
 	"language":"bangla",
 	"origin":"local"
@@ -11,6 +12,7 @@
 	"id":2,
 	"name":"Daily Star",
 	"json":"dailyStar",
+	"active":true,
 	"logo":"dailyStar.png",
 	"language":"english",
 	"origin":"local"
@@ -19,6 +21,7 @@
 	"id":3,
 	"name":"BDNews24",
 	"json":"BDNews24",
+	"active":true,
 	"logo":"BDNews24.png",
 	"language":"bangla",
 	"origin":"local"
@@ -27,6 +30,7 @@
 	"id":4,
 	"name":"Inquilab",
 	"json":"inqilab",
+	"active":true,
 	"logo":"inqilab.jpg",
 	"language":"bangla",
 	"origin":"local"
@@ -35,15 +39,17 @@
 	"id":5,
 	"name":"Kaler Kantho",
 	"json":"kalerKantho",
+	"active":true,
 	"logo":"kalerKantho.png",
 	"language":"bangla",
 	"origin":"local"
 },
 {
 	"id":6,
-	"name":"Noya Digonto",
-	"json":"noyaDigonto",
-	"logo":"noyaDigonto.png",
+	"name":"News Today",
+	"json":"newsToday",
+	"active":true,
+	"logo":"newsToday.png",
 	"language":"bangla",
 	"origin":"local"
 },
@@ -51,6 +57,7 @@
 	"id":7,
 	"name":"Samakal",
 	"json":"samakal",
+	"active":true,
 	"logo":"samakal.png",
 	"language":"bangla",
 	"origin":"local"
@@ -59,6 +66,7 @@
 	"id":8,
 	"name":"BBC",
 	"json":"BBC",
+	"active":true,
 	"logo":"BBC.png",
 	"language":"bangla",
 	"origin":"foreign"
@@ -67,6 +75,7 @@
 	"id":9,
 	"name":"Al Jazeera",
 	"json":"alJazeera",
+	"active":true,
 	"logo":"alJazeera.png",
 	"language":"english",
 	"origin":"foreign"
