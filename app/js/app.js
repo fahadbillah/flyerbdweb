@@ -4,6 +4,7 @@
 angular.module('flyerBD', [
   'ngRoute',
   'ngResource',
+  'ngAnimate',
   'flyerBDFilters',
   'flyerBDServices',
   'flyerBDDirectives',

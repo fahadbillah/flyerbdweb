@@ -137,47 +137,30 @@ strong{
   background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
 
-#loader {
-  width:100px;
-  height:50px;
-  position:relative;
-  margin:100px auto 0;
+.spinner{
+  text-align: center;
+  height: 100px;
+  padding-top: 30%;
+  padding-bottom: 30%;
+  background: rgba(255,255,255,0.95);
 }
 
-.stick {
-  width:50px;
-  height:6px;
-  position:absolute;
-  top:23px;
+#footer {
+  min-height: 200px;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  opacity: 0.8;
 }
 
-.left {
-  left:3px;
-  transform:rotate(180deg);
-  animation:left 1.7s infinite;
+.footerIntro{
+  padding: 0px 15px;
 }
 
-@keyframes left {
-  from { transform:rotate(180deg) scale(1); }
-  50% { transform:rotate(540deg) scale(1.5); }
-  to { transform:rotate(540deg) scale(1); }
-}
-
-.right {
-  right:3px;
-  animation:right 1.7s infinite;
-}
-
-@keyframes right {
-  from { transform:rotate(0deg) scale(1.5); }
-  50% { transform:rotate(0deg) scale(1); }
-  to { transform:rotate(-360deg) scale(1.5); }
-}
-
-.right span, .left span {
-  width:6px;
-  height:6px;
-  background:red;
-  border-radius:3px;
-  display:block;
+.footerIntro p{
+  padding: 30px 0px;
 }

@@ -14,10 +14,11 @@ angular.module('flyerBDControllers', [])
   }])
   .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', 'allSiteList', function($scope,$http,$routeParams,getRandomSpan,base64,utf8,allSiteList) {
     /*$scope.allSiteList = allSiteList();*/
-
+    $scope.spinner = false;
     $scope.siteID = $routeParams["id"].substr(1);
     $scope.json = $routeParams["site"].substr(1);
     $http.get('news/'+$scope.json+".json").success(function(data) {
+      $scope.spinner = true;
       $scope.news = data;
       $scope.length = data.length;
       $scope.spanSizes = getRandomSpan($scope.length);

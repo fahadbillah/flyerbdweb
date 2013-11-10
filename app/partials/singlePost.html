@@ -1,7 +1,8 @@
 <div>
-	<div id="loader" ng-hide="spinner">
-	  <div class="left stick"><span></span></div>
-	  <div class="right stick"><span></span></div>
+	<div class='row' ng-hide="spinner">
+		<div class='col-md-12 spinner'>
+		  <img src="img/spinner.gif">
+		</div>
 	</div>
 	<div class='singlePostTitle'>
 		<h3> {{utf8.decode(base64.decode(news.title))}} </h3>

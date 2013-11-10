@@ -19,9 +19,8 @@
 		//echo $pos."<br>";
 		
 	}
-	print_r($allLink);
-	$allLink = array_unique($allLink);
-$counter = 1;
+	//print_r($allLink);
+
 	//header
 	foreach ($allLink as $link) {
 		$singlePost = file_get_html($link);
@@ -29,11 +28,9 @@ $counter = 1;
 	//the title
 		$title = $singlePost->find(".newscontent h3");
 		foreach($title as $elemet2){
-			//$newsTitle=base64_encode($elemet2->plaintext);
-			$titleBeta=$elemet2->plaintext;
-			$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
-			$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
-			
+			$newsTitle=base64_encode($elemet2->plaintext);
+			//echo $newsTitle."<br>";
+			//break;
 		}
 	
 	//Single post image
@@ -50,7 +47,7 @@ $counter = 1;
 		}
 		else
 		{
-			$pic=base64_encode("img/flyerBDHolder.jpg");
+			$pic=base64_encode("http://images1.wikia.nocookie.net/__cb20100722190004/logopedia/images/thumb/b/b6/SNCB_B_logo.svg/120px-SNCB_B_logo.svg.png");
 			//echo $pic."<br>";
 		}
 
@@ -58,18 +55,17 @@ $counter = 1;
 		$detail = $singlePost->find('.content');
 
 		foreach($detail as $elemet3){
-			//$txt=base64_encode($elemet3->plaintext);
-
-			$txt_beta1=$elemet3->plaintext;
-			$txt_beta2=str_replace( "&nbsp;" , "" , $titleBeta1);
-			$txt=base64_encode($txt_beta2);
+			$txt=base64_encode($elemet3->plaintext);
+		//echo $txt;
 		}
-		$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+		$temparr= array('title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 		array_push($AllContent, $temparr);
-		$counter++;
-		//break;//
+		//break;
 	}
 	$fp = fopen('noyaDigonto.json', 'w');
 	fwrite($fp,json_encode($AllContent));
 	fclose($fp);
-?>
+
+
+
+	?>

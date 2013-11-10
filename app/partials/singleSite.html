@@ -1,6 +1,11 @@
 <!-- <div class="well"> {{allSiteList.list()}} </div> -->
+<div class='row' ng-hide="spinner">
+	<div class='col-md-12 spinner'>
+	  <img src="img/spinner.gif">
+	</div>
+</div>
 <div class="motherBox" ng-repeat="n in news">
-  <div class="col-md-3 box"> <!-- {{spanSizes[$index]}} -->
+  <div class="col-md-3 box">
     <div class="listTitleBG"></div>
   	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{n.id-1}}" class="thumbnail">
       <img src="{{base64.decode(news[$index].newsImage)}}" height="200px" alt="{{utf8.decode(base64.decode(news[$index].title))}}" class="listImg">

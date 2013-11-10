@@ -1,6 +1,6 @@
 {
-  "name": "angualrjs-seed",
-  "description": "A starter project for angular js",
+  "name": "FlyerBD",
+  "description": "BD News Local && Foreign!",
   "devDependencies": {
         "phantomjs" : "*",
         "karma" : "*",
