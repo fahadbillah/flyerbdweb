@@ -13,7 +13,7 @@ angular.module('flyerBDControllers', [])
 	  $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
   .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', 'allSiteList', function($scope,$http,$routeParams,getRandomSpan,base64,utf8,allSiteList) {
-    $scope.allSiteList = allSiteList();
+    /*$scope.allSiteList = allSiteList();*/
 
     $scope.siteID = $routeParams["id"].substr(1);
     $scope.json = $routeParams["site"].substr(1);
@@ -29,9 +29,11 @@ angular.module('flyerBDControllers', [])
     $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
   .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', 'base64', 'utf8', function($scope,$http,$routeParams,base64,utf8) {
+    $scope.spinner = false;
     $scope.json = $routeParams["site"].substr(1);
     var postID = $routeParams["post"].substr(1);
     $http.get('news/'+$scope.json+".json").success(function(data) {
+      $scope.spinner = true;
       $scope.news = data[postID];
     });
     $scope.base64 = base64;

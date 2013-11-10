@@ -119,7 +119,7 @@ strong{
 }
 
 .thumbnail{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .siteLinks{
@@ -135,4 +135,49 @@ strong{
   linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
   background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+#loader {
+  width:100px;
+  height:50px;
+  position:relative;
+  margin:100px auto 0;
+}
+
+.stick {
+  width:50px;
+  height:6px;
+  position:absolute;
+  top:23px;
+}
+
+.left {
+  left:3px;
+  transform:rotate(180deg);
+  animation:left 1.7s infinite;
+}
+
+@keyframes left {
+  from { transform:rotate(180deg) scale(1); }
+  50% { transform:rotate(540deg) scale(1.5); }
+  to { transform:rotate(540deg) scale(1); }
+}
+
+.right {
+  right:3px;
+  animation:right 1.7s infinite;
+}
+
+@keyframes right {
+  from { transform:rotate(0deg) scale(1.5); }
+  50% { transform:rotate(0deg) scale(1); }
+  to { transform:rotate(-360deg) scale(1.5); }
+}
+
+.right span, .left span {
+  width:6px;
+  height:6px;
+  background:red;
+  border-radius:3px;
+  display:block;
 }
