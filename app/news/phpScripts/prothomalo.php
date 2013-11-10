@@ -61,7 +61,7 @@ foreach ($allLink as $links)
         $txt_beta2=str_replace ( "&nbsp;" , "" , $txt_beta1);
         $txt=base64_encode($txt_beta2);
         
-        $temparr= array('id' => $counter, 'title' => $newTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+        $temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
         //print_r($temparr);
         array_push($AllContent, $temparr);
         $counter++;

@@ -66,7 +66,7 @@ foreach ($allLink as $link) {
 
 	foreach($detail as $elemet3){
 		$txt_beta1=$elemet3->plaintext;
-		$txt_beta2=str_replace( "&nbsp;" , "" , $titleBeta1);
+		$txt_beta2=str_replace( "&nbsp;" , "" , $txt_beta1);
 		$txt=base64_encode($txt_beta2);
 	}
 	$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
