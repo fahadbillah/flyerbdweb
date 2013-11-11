@@ -63,6 +63,15 @@
 	"origin":"local"
 },
 {
+	"id":10,
+	"name":"Naya Diganta",
+	"json":"nayaDiganta",
+	"active":true,
+	"logo":"nayaDiganta.png",
+	"language":"bangla",
+	"origin":"local"
+},
+{
 	"id":8,
 	"name":"BBC",
 	"json":"BBC",

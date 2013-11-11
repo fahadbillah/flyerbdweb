@@ -1,3 +1,8 @@
+<div class='row' ng-hide="spinner">
+  <div class='col-md-12 spinner'>
+    <img src="img/spinner.gif">
+  </div>
+</div>
 <div class="motherBox" ng-repeat="site in sites">
   <div class="col-md-{{spanSizes}} box">
   	<a href="#/singleSite/:{{site.json}}/:{{site.id}}" class="thumbnail siteLinks logos">

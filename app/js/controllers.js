@@ -4,7 +4,9 @@
 		
 angular.module('flyerBDControllers', [])
   .controller('AllSitesCtrl', ['$scope', '$http', 'getRandomSpan', function($scope,$http,getRandomSpan) {
-	  $http.get('news/allSites.json').success(function(data) {
+    $scope.spinner = false;
+    $http.get('news/allSites.json').success(function(data) {
+      $scope.spinner = true;
 	    $scope.sites = data;
       $scope.length = data.length;
 	  });
@@ -36,6 +38,33 @@ angular.module('flyerBDControllers', [])
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
       $scope.news = data[postID];
+      var d = utf8.decode(base64.decode($scope.news.detail));
+      console.log(d.length);
+      var dl = Math.floor(d.length/3);
+      $scope.details = [];
+      var c = 0;
+      for (var i = 0; i < 3; i++) {
+        $scope.details.push(d.substr(c,dl)); 
+        c+=dl;
+        /*var k = dl+c;
+        for (var j = 0; j <20; j++) {
+          if(d[k+j]!==" ")
+            continue;
+          else
+            k+=j;
+        };
+        if(k>d.length){
+          $scope.details.push(d.substr(c));
+          console.log('works');
+        }
+        else{
+          $scope.details.push(d.substr(c,k));          
+        }
+        c+= k;*/
+        /*console.log(k);
+        console.log(c);*/
+      };
+      console.log($scope.details);
     });
     $scope.base64 = base64;
     $scope.utf8 = utf8;
