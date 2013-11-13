@@ -27,11 +27,20 @@
 	"origin":"local"
 },
 {
+	"id":11,
+	"name":"Bangla News 24",
+	"json":"banglaNews24",
+	"active":true,
+	"logo":"banglaNews24.png",
+	"language":"bangla",
+	"origin":"local"
+},
+{
 	"id":4,
 	"name":"Inquilab",
 	"json":"inqilab",
 	"active":true,
-	"logo":"inqilab.jpg",
+	"logo":"inqilab.png",
 	"language":"bangla",
 	"origin":"local"
 },
@@ -63,15 +72,6 @@
 	"origin":"local"
 },
 {
-	"id":10,
-	"name":"Naya Diganta",
-	"json":"nayaDiganta",
-	"active":true,
-	"logo":"nayaDiganta.png",
-	"language":"bangla",
-	"origin":"local"
-},
-{
 	"id":8,
 	"name":"BBC",
 	"json":"BBC",
@@ -88,5 +88,14 @@
 	"logo":"alJazeera.png",
 	"language":"english",
 	"origin":"foreign"
+},
+{
+	"id":10,
+	"name":"Ittefaq",
+	"json":"ittefaq",
+	"active":true,
+	"logo":"ittefaq.png",
+	"language":"bangla",
+	"origin":"local"
 }
 ]

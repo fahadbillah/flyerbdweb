@@ -12,10 +12,8 @@
 		<img class='img-responsive' src="{{base64.decode(news.newsImage)}}">
 	</div>
 	<div class='singlePostDetail row'>
-		<div ng-repeat="detail in details" class="col-md-4">  {{detail}}  </div>
+		<!-- <div ng-repeat="detail in details" class="col-md-4">  {{detail}}  </div> -->
 		<!-- <p ng-repeat="split in splitBox"> {{utf8.decode(base64.decode(detail))}} </p> -->
-		<!-- <p > {{utf8.decode(base64.decode(d1))}} </p>
-		<p > {{utf8.decode(base64.decode(d2))}} </p>
-		<p > {{utf8.decode(base64.decode(d3))}} </p> -->
+		<p > {{utf8.decode(base64.decode(news.detail))}} </p>
 	</div>
 </div>

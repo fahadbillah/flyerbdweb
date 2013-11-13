@@ -1,0 +1,35 @@
+<div ng-controller="FeedbackCtrl">
+<div ng-show="feedbackFormShow" id="feedbackDiv" class="check-element animate-show feedbackDiv">
+  <!-- <div ng-show="feedbackLoadingDiv" class="feedbackLoadingDiv">
+    
+  </div> -->
+  <div id="feedbackButtonDiv" class="feedbackButtonDiv">
+    <img src="img/feedback.jpg" class="img-responsive" ng-click="feedbackFormToggle()" width="40">
+  </div>
+  <div id="feedbackFormDiv" class="feedbackFormDiv">
+    <form name="feedbackForm" action="#" method="post" role="form" accept-charset="utf-8">
+      <div class="form-group">
+        <label for="feedbackName">Name</label>
+        <input type="text" class="form-control" name="feedbackName" placeholder="Enter name" ng-model="feedbackName" required>
+        <span class="error label label-danger" ng-show="feedbackForm.feedbackName.$error.required">Required!</span>
+      </div>
+      <div class="form-group">
+        <label for="feedbackEmail">Email address</label>
+        <input type="email" class="form-control" name="feedbackEmail" placeholder="Enter email" ng-model="feedbackEmail" required>
+        <span class="error label label-danger" ng-show="feedbackForm.feedbackEmail.$error.required">Required!</span>
+        <span class="error label label-danger" ng-show="feedbackForm.feedbackEmail.$error.email">Not valid email!</span>
+      </div>
+      <div class="form-group">
+        <label for="feedbackTextarea">Feedback</label>
+        <textarea class="form-control" name="feedbackTextarea" ng-model="feedbackTextarea" required></textarea>
+        <span class="error label label-danger" ng-show="feedbackForm.feedbackTextarea.$error.required">Required!</span>
+      </div>
+      <button type="button" class="btn" ng-click="submitFeedback()" name="feedbackSubmit" ng-model="feedbackSubmit">Submit</button> <img ng-show="feedbackLoading" src="img/blackSpinner.gif" width="20">
+    </form>
+  </div>
+  <div ng-show="feedbackConfirmDiv" class="alert {{feedbackConfirmation.style}} alert-dismissable feedbackConfirmDiv"> 
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    {{feedbackConfirmation.text}}
+  </div>
+</div>
+</div>

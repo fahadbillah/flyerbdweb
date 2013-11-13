@@ -68,9 +68,10 @@ strong{
 }
 
 .singlePostDetail{
+  font-size: 15px;
   padding: 10px;
   text-align: justify;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.95);
 }
 
 .logos {
@@ -149,8 +150,8 @@ strong{
   min-height: 200px;
   background-color: #f5f5f5;
   margin-top: 50px;
-  margin-left: -20px;
-  margin-right: -20px;
+  /*margin-left: -20px;
+  margin-right: -20px;*/
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
@@ -163,4 +164,62 @@ strong{
 
 .footerIntro p{
   padding: 30px 0px;
+}
+
+.feedbackDiv{
+  background: #515151;
+  position: absolute;
+  top: 15%;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 250px;
+  z-index: 1;
+}
+
+.ng-hide.feedbackDiv {
+  display:block!important;
+  position:absolute;
+  left:-250px;
+}
+
+.feedbackButtonDiv{
+  position: absolute;
+  left: 100%;
+}
+
+.feedbackFormDiv{
+  padding-bottom: 20px;
+}
+
+.animate-show {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+  line-height:20px;
+  opacity:1;
+  padding:10px;
+}
+ 
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+  display:block!important;
+}
+ 
+.animate-show.ng-hide {
+  line-height:0;
+  padding:0 10px;
+}
+ 
+.check-element {
+  padding:10px;
+}
+
+.feedbackLoadingDiv{
+  position: absolute;
+  top: 304px;
+  left: 90px;
+  width: 32px;
+}
+
+.feedbackConfirmDiv{
+  max-width: 200px;
 }
