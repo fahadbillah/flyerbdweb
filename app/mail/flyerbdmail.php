@@ -45,11 +45,12 @@ $mail->Body    = $msg;
 
 
 if(!$mail->send()) {
-	echo 'Message could not be sent.';
+	/*echo 'Message could not be sent.';
 	echo 'Mailer Error: ' . $mail->ErrorInfo;
-	exit();
+	exit();*/
+	return false;
 }
-
+echo "Mail sent!";
 //header('Location: http://staging.iquantum.com.au/glenvill.com.au/thanks-contact/');
 
 ?>

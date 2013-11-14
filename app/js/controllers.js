@@ -124,8 +124,7 @@ angular.module('flyerBDControllers', [])
     $scope.feedbackConfirmation = {
       "text" : "",
       "style": ""
-    }
-    ;
+    };
     $scope.feedbackName = '';
     $scope.feedbackEmail = '';
     $scope.feedbackTextarea = '';
@@ -136,16 +135,12 @@ angular.module('flyerBDControllers', [])
         $scope.feedbackFormShow = true;
     };
     $scope.submitFeedback = function(){
-      //alert($scope.feedbackName+' '+$scope.feedbackEmail+' '+$scope.feedbackTextarea);
       $scope.feedbackLoading = true;
-      //alert('works');
       var sendData = {
         'name': $scope.feedbackName,
         'email': $scope.feedbackEmail,
         'feedback': $scope.feedbackTextarea
       };
-      $scope.feedbackConfirmDiv = true;
-      //$http.post('mail/flyerbdfmail.php',sendData)
       $http({
             url: 'mail/flyerbdmail.php',
             method: "POST",
@@ -155,19 +150,24 @@ angular.module('flyerBDControllers', [])
       .success(function(data){
         console.log(data);
         if(data){
+          $scope.feedbackConfirmDiv = true;
           $scope.feedbackConfirmation.text = "Thanks for your precious feedback!";
           $scope.feedbackConfirmation.style = "alert alert-success";
+          $scope.feedbackName = '';
+          $scope.feedbackEmail = '';
+          $scope.feedbackTextarea = '';
         }
         else{
-          $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted!";
+          $scope.feedbackConfirmDiv = true;
+          $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted! success error!";
           $scope.feedbackConfirmation.style = "alert alert-danger";
         }
-        $scope.feedbackConfirmDiv = true;
-        $scope.feedbackLoadingDiv = false;
+        $scope.feedbackLoading = false;
       })
       .error(function(data, status) {
         //$scope.data = data || "Request failed";
-        //$scope.status = status;
+        console.log(status);
+        $scope.feedbackConfirmDiv = true;
         $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted!";
         $scope.feedbackConfirmation.style = "alert alert-danger";
       });
