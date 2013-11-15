@@ -34,10 +34,16 @@ angular.module('flyerBDControllers', [])
   .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', 'base64', 'utf8', function($scope,$http,$routeParams,base64,utf8) {
     $scope.spinner = false;
     $scope.json = $routeParams["site"].substr(1);
-    var postID = $routeParams["post"].substr(1);
+    $scope.siteID = $routeParams["id"].substr(1);
+    $scope.postID = $routeParams["post"].substr(1);
+    $scope.prevPostID = parseInt($scope.postID)-1;
+    $scope.nextPostID = parseInt($scope.postID)+1;
+    $scope.noOfSideBarPost = 10;
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
-      $scope.news = data[postID];
+      $scope.news = data[$scope.postID];
+      $scope.allNews = data;
+      console.log($scope.allNews);
       /*var d = utf8.decode(base64.decode($scope.news.detail));
       d.trim();
       console.log(d.length);

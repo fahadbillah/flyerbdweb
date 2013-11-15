@@ -8,8 +8,8 @@
   <div class="col-md-3 box">
     <div class="listTitleBG"></div>
   	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{n.id-1}}" class="thumbnail">
-      <img src="{{base64.decode(news[$index].newsImage)}}" height="200px" alt="{{utf8.decode(base64.decode(news[$index].title))}}" class="listImg">
-      <span class='listTitle'><strong>{{utf8.decode(base64.decode(news[$index].title))}}</strong></span>
+      <img src="{{base64.decode(n.newsImage)}}" height="200px" alt="{{utf8.decode(base64.decode(news[$index].title))}}" class="listImg">
+      <span class='listTitle'><strong>{{utf8.decode(base64.decode(n.title))}}</strong></span>
     </a>
   </div>
 </div>

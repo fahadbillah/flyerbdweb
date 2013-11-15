@@ -20,10 +20,12 @@ $mail = new PHPMailer;
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'email-smtp.us-east-1.amazonaws.com';  // Specify main and backup server
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Port       = 587;    
+/*$mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'AKIAJXGHEY76LTLY5CYQ';                            // SMTP username
-$mail->Password = 'At7MVdoCOlTe5P9+RVI9b+tMsF6WVxLjkQf0eu2p8ABy';    // SMTP password
+$mail->Password = 'At7MVdoCOlTe5P9+RVI9b+tMsF6WVxLjkQf0eu2p8ABy'; */   // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+$SMTPDebug	= true;
 
 $mail->SetFrom('noman@iquantum.com.au', $Subject);
 
@@ -45,9 +47,9 @@ $mail->Body    = $msg;
 
 
 if(!$mail->send()) {
-	/*echo 'Message could not be sent.';
+	echo 'Message could not be sent.';
 	echo 'Mailer Error: ' . $mail->ErrorInfo;
-	exit();*/
+	exit();
 	return false;
 }
 echo "Mail sent!";

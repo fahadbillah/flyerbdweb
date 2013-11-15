@@ -184,11 +184,27 @@ strong{
 
 .feedbackButtonDiv{
   position: absolute;
+  top: 50px;
   left: 100%;
 }
 
 .feedbackFormDiv{
   padding-bottom: 20px;
+}
+
+.feedbackLoadingDiv{
+  position: absolute;
+  top: 304px;
+  left: 90px;
+  width: 32px;
+}
+
+.feedbackConfirmDiv{
+  max-width: 200px;
+}
+
+.feedbackImg{
+  width: 30px;
 }
 
 .animate-show {
@@ -213,13 +229,36 @@ strong{
   padding:10px;
 }
 
-.feedbackLoadingDiv{
-  position: absolute;
-  top: 304px;
-  left: 90px;
-  width: 32px;
+
+.sideBar{
+  background-color: rgba(255,255,255,0.75);
+  margin: 0px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
-.feedbackConfirmDiv{
-  max-width: 200px;
+.sideBar a{
+  color: 666666 !important;
+}
+
+.sideBarListImg{
+  height: 100px !important;
+  min-width: 100%;
+}
+
+.sideBarLogo{
+  
+}
+
+.sideBarLogoLink{
+  
+}
+
+.sideBarLogoimg{
+  max-width: 100%;
+}
+
+.bottomNav{
+  padding-top: 15px;
 }
