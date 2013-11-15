@@ -18,7 +18,7 @@
 			<p > {{utf8.decode(base64.decode(news.detail))}} </p>
 		</div>
 	</div>
-	<div class="col-md-3 sideBar visible-lg">
+	<div class="col-md-3 sideBar visible-lg visible-md">
 		<div class="sideBarLogo">
 			<a class="sideBarLogoLink" href="#/singleSite/:{{json}}/:{{siteID}}">
 				<img class="sideBarLogoimg" src="img/logos/{{json}}.png">
@@ -32,10 +32,10 @@
 	    </a>
 	  </div>
 	</div>
-	<div class="col-md-3 hidden-lg btn-group-vertical bottomNav">
+	<div class="col-md-3 visible-xs visible-sm btn-group-vertical bottomNav">
     <a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" type="button" class="btn btn-default btn-lg btn-block">Previous Post</a>
 		<a href="#/singleSite/:{{json}}/:{{siteID}}" type="button" class="btn btn-default btn-lg btn-block"> {{json}} </a>
-		<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" type="button" class="btn btn-default btn-lg btn-block">Previous Post</a>
+		<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" type="button" class="btn btn-default btn-lg btn-block">Next Post</a>
 		<!-- <div class="col-sm-3">
 	    <div class=""></div>
 	  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" class="thumbnail">
