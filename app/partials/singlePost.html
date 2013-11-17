@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" ng-swipe-right="prevPost()" ng-swipe-left="nextPost(noOfNews)">
 	<div class="col-md-8 mainContent">
 		<div class='row' ng-hide="spinner">
 			<div class='col-md-12 spinner'>
@@ -33,9 +33,9 @@
 	  </div>
 	</div>
 	<div class="col-md-3 visible-xs visible-sm btn-group-vertical bottomNav">
-    <a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" type="button" class="btn btn-default btn-lg btn-block">Previous Post</a>
-		<a href="#/singleSite/:{{json}}/:{{siteID}}" type="button" class="btn btn-default btn-lg btn-block"> {{json}} </a>
-		<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" type="button" class="btn btn-default btn-lg btn-block">Next Post</a>
+    <a ng-disabled="{{prevDisabled}}" href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" type="button" class="btn btn-default btn-lg btn-block">Previous Post</a>
+		<a href="#/singleSite/:{{json}}/:{{siteID}}" type="button" class="btn btn-default btn-lg btn-block"> {{json}} {{}} </a>
+		<a ng-disabled="nextAvailable(noOfNews)" href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" type="button" class="btn btn-default btn-lg btn-block">Next Post</a>
 		<!-- <div class="col-sm-3">
 	    <div class=""></div>
 	  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" class="thumbnail">

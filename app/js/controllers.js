@@ -31,18 +31,40 @@ angular.module('flyerBDControllers', [])
     $scope.holderSize = 150;
     $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', 'base64', 'utf8', function($scope,$http,$routeParams,base64,utf8) {
+  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', '$location', 'base64', 'utf8', function($scope,$http,$routeParams,$location,base64,utf8) {
     $scope.spinner = false;
+    $scope.prevDisabled = false;
+    $scope.nextDisabled = false;
+    $scope.rawPath = $location.path().substr(0,$location.path().lastIndexOf(':')+1);
     $scope.json = $routeParams["site"].substr(1);
     $scope.siteID = $routeParams["id"].substr(1);
     $scope.postID = $routeParams["post"].substr(1);
     $scope.prevPostID = parseInt($scope.postID)-1;
     $scope.nextPostID = parseInt($scope.postID)+1;
+    var prev = $scope.rawPath + $scope.prevPostID;
+    var next = $scope.rawPath + $scope.nextPostID;
+    if($scope.prevPostID<0)
+      $scope.prevDisabled = true;
+    $scope.nextAvailable = function(input){
+      if($scope.nextPostID==input)
+        return true;
+    };
+    $scope.lowerLimit = 0;
     $scope.noOfSideBarPost = 10;
+    $scope.prevPost = function(){
+      if($scope.prevPostID>=0)
+        $location.path(prev);
+    };
+    $scope.nextPost = function(input){
+      if($scope.nextPostID<input)
+        $location.path(next);
+    };
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
       $scope.news = data[$scope.postID];
       $scope.allNews = data;
+      $scope.noOfNews = data.length;
+
       console.log($scope.allNews);
       /*var d = utf8.decode(base64.decode($scope.news.detail));
       d.trim();
