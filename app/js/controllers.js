@@ -177,19 +177,19 @@ angular.module('flyerBDControllers', [])
         })
       .success(function(data){
         console.log(data);
-        if(data){
+        /*if(data){*/
           $scope.feedbackConfirmDiv = true;
           $scope.feedbackConfirmation.text = "Thanks for your precious feedback!";
           $scope.feedbackConfirmation.style = "alert alert-success";
           $scope.feedbackName = '';
           $scope.feedbackEmail = '';
           $scope.feedbackTextarea = '';
-        }
+        /*}
         else{
           $scope.feedbackConfirmDiv = true;
           $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted! success error!";
           $scope.feedbackConfirmation.style = "alert alert-danger";
-        }
+        }*/
         $scope.feedbackLoading = false;
       })
       .error(function(data, status) {

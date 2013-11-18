@@ -16,18 +16,33 @@ $receiverName = "FlyerBD Developer Team";
 $Subject = "FlyerBD Feedback";
 $msg = "Name: ".$senderName."\r\nEmail: ".$senderEmail."\r\nFeedback: ".$senderFeedback;
 
-$mail = new PHPMailer;
+$to = 'gan.mahmud@gmail.com,murshed.soudi@gmail.com,billah22@gmail.com';
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'email-smtp.us-east-1.amazonaws.com';  // Specify main and backup server
+if(mail($to, $Subject, $msg))
+	return true;
+else
+	return false;
+
+/*$mail = new PHPMailer;
+
+$mail->isSMTP();   */                                   // Set mailer to use SMTP
+/*$mail->Host = 'email-smtp.us-east-1.amazonaws.com';  // Specify main and backup server
 $mail->Port       = 587;    
-/*$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'AKIAJXGHEY76LTLY5CYQ';                            // SMTP username
-$mail->Password = 'At7MVdoCOlTe5P9+RVI9b+tMsF6WVxLjkQf0eu2p8ABy'; */   // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
+$mail->Password = 'At7MVdoCOlTe5P9+RVI9b+tMsF6WVxLjkQf0eu2p8ABy';    // SMTP password
+$mail->SMTPSecure = 'tls'; */                                   // Set mailer to use SMTP
+
+
+/*$mail->Host = 'mail.flyerbd.com';  // Specify main and backup server
+$mail->Port       = 26;    
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'info@flyerbd.com';                            // SMTP username
+$mail->Password = '080722';    // SMTP password
+//$mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 $SMTPDebug	= true;
 
-$mail->SetFrom('noman@iquantum.com.au', $Subject);
+$mail->SetFrom('fahadbillah@yahoo.com', $Subject);
 
 $mail->addAddress('gan.mahmud@gmail.com', 'Gan'); 
 $mail->addAddress('billah22@gmail.com', 'Fahad'); 
@@ -47,12 +62,13 @@ $mail->Body    = $msg;
 
 
 if(!$mail->send()) {
-	echo 'Message could not be sent.';
-	echo 'Mailer Error: ' . $mail->ErrorInfo;
-	exit();
+	//echo 'Message could not be sent.';
+	//echo 'Mailer Error: ' . $mail->ErrorInfo;
+	//exit();
 	return false;
 }
-echo "Mail sent!";
+return true;*/
+//echo "Mail sent!";
 //header('Location: http://staging.iquantum.com.au/glenvill.com.au/thanks-contact/');
 
 ?>
