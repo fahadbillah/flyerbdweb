@@ -19,4 +19,7 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/singleSite/:site/:id', {templateUrl: 'partials/singleSite.html', controller: 'SingleSiteCtrl'});
   $routeProvider.when('/singleSite/:site/:id/singlePost/:post', {templateUrl: 'partials/singlePost.html', controller: 'SinglePostCtrl'});
   $routeProvider.otherwise({redirectTo: '/home'});
+}])
+.config(['$sceDelegateProvider', function($sceDelegateProvider){
+  $sceDelegateProvider.resourceUrlWhitelist(['self','//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80']);
 }]);

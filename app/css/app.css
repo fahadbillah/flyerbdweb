@@ -105,6 +105,13 @@ strong{
 .box {
   padding: 0px 0px;
   vertical-align: middle !important;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+/*#blah { -webkit-transition: all .2s ease-in-out; }*/
+.box:hover { 
+  -webkit-transform: scale(1.1);
+  z-index: 10;
 }
 
 .menu {
@@ -164,13 +171,30 @@ strong{
 }
 
 #footer {
-  min-height: 200px;
+  min-height: 300px;
   background-image: url(../img/navBG.jpg) !important;
   background-repeat: repeat-y;
   margin-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
+}
+
+.img-circle{
+  width: 100px;
+  height: 100px;
+}
+
+.caption{
+  text-align: center;
+}
+
+.caption h4{
+}
+
+.aboutUs.thumbnail{
+  background-color: rgba(0,0,0,0);
+  border: none;
 }
 
 .footerIntro{

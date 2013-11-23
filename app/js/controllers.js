@@ -177,27 +177,25 @@ angular.module('flyerBDControllers', [])
         })
       .success(function(data){
         console.log(data);
-        /*if(data){*/
-          $scope.feedbackConfirmDiv = true;
-          $scope.feedbackConfirmation.text = "Thanks for your precious feedback!";
-          $scope.feedbackConfirmation.style = "alert alert-success";
-          $scope.feedbackName = '';
-          $scope.feedbackEmail = '';
-          $scope.feedbackTextarea = '';
-        /*}
-        else{
-          $scope.feedbackConfirmDiv = true;
-          $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted! success error!";
-          $scope.feedbackConfirmation.style = "alert alert-danger";
-        }*/
+        $scope.feedbackConfirmDiv = true;
+        $scope.feedbackConfirmation.text = "Thanks for your precious feedback!";
+        $scope.feedbackConfirmation.style = "alert alert-success";
+        $scope.feedbackName = '';
+        $scope.feedbackEmail = '';
+        $scope.feedbackTextarea = '';
         $scope.feedbackLoading = false;
       })
       .error(function(data, status) {
-        //$scope.data = data || "Request failed";
         console.log(status);
         $scope.feedbackConfirmDiv = true;
         $scope.feedbackConfirmation.text = "Sorry your massage could not be submitted!";
         $scope.feedbackConfirmation.style = "alert alert-danger";
       });
     };
+  }])
+  .controller('FBLikeCtrl',['$scope','$sce', function($scope,$sce){
+    //$scope.FBLike = $sce.trustAsHtml('<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>');
+    //$scope.FBUrl = '//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80';
+    $scope.FBUrl = '//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80';
+    //$scope.FBUrl = $sce.getTrustedResourceUrl('//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80');
   }]);
