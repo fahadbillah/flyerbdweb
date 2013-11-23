@@ -10,15 +10,6 @@
 },
 {
 	"id":2,
-	"name":"Daily Star",
-	"json":"dailyStar",
-	"active":true,
-	"logo":"dailyStar.png",
-	"language":"english",
-	"origin":"local"
-},
-{
-	"id":3,
 	"name":"BDNews24",
 	"json":"BDNews24",
 	"active":true,
@@ -27,7 +18,16 @@
 	"origin":"local"
 },
 {
-	"id":11,
+	"id":16,
+	"name":"Naya Diganta",
+	"json":"nayadiganta",
+	"active":true,
+	"logo":"nayadiganta.png",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":5,
 	"name":"Bangla News 24",
 	"json":"banglaNews24",
 	"active":true,
@@ -36,7 +36,7 @@
 	"origin":"local"
 },
 {
-	"id":4,
+	"id":6,
 	"name":"Inquilab",
 	"json":"inqilab",
 	"active":true,
@@ -45,7 +45,16 @@
 	"origin":"local"
 },
 {
-	"id":5,
+	"id":7,
+	"name":"Ittefaq",
+	"json":"ittefaq",
+	"active":true,
+	"logo":"ittefaq.png",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":8,
 	"name":"Kaler Kantho",
 	"json":"kalerKantho",
 	"active":true,
@@ -54,16 +63,7 @@
 	"origin":"local"
 },
 {
-	"id":6,
-	"name":"News Today",
-	"json":"newsToday",
-	"active":true,
-	"logo":"newsToday.png",
-	"language":"bangla",
-	"origin":"local"
-},
-{
-	"id":7,
+	"id":9,
 	"name":"Samakal",
 	"json":"samakal",
 	"active":true,
@@ -72,7 +72,25 @@
 	"origin":"local"
 },
 {
-	"id":8,
+	"id":10,
+	"name":"Daily Star",
+	"json":"dailyStar",
+	"active":true,
+	"logo":"dailyStar.png",
+	"language":"english",
+	"origin":"local"
+},
+{
+	"id":15,
+	"name":"Independent",
+	"json":"independent",
+	"active":true,
+	"logo":"independent.png",
+	"language":"english",
+	"origin":"local"
+},
+{
+	"id":3,
 	"name":"BBC",
 	"json":"BBC",
 	"active":true,
@@ -81,7 +99,25 @@
 	"origin":"foreign"
 },
 {
-	"id":9,
+	"id":4,
+	"name":"DW",
+	"json":"dw",
+	"active":true,
+	"logo":"dw.png",
+	"language":"bangla",
+	"origin":"foreign"
+},
+{
+	"id":11,
+	"name":"News Today",
+	"json":"newsToday",
+	"active":true,
+	"logo":"newsToday.png",
+	"language":"bangla",
+	"origin":"local"
+},
+{
+	"id":12,
 	"name":"Al Jazeera",
 	"json":"alJazeera",
 	"active":true,
@@ -90,11 +126,20 @@
 	"origin":"foreign"
 },
 {
-	"id":10,
-	"name":"Ittefaq",
-	"json":"ittefaq",
+	"id":13,
+	"name":"Fox News",
+	"json":"foxNews",
 	"active":true,
-	"logo":"ittefaq.png",
+	"logo":"foxnews.png",
+	"language":"english",
+	"origin":"foreign"
+},
+{
+	"id":14,
+	"name":"Priyo Blog",
+	"json":"priyo",
+	"active":true,
+	"logo":"priyo.png",
 	"language":"bangla",
 	"origin":"local"
 }

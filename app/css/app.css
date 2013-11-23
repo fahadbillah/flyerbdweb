@@ -26,8 +26,8 @@ body {
 }
 
 .navbar-default{
-  background-image: url(../img/navBG.jpg) !important;
-  background-repeat: no-repeat;
+  background-image: url(../img/subtle_carbon/subtle_carbon_2.png) !important;
+  background-repeat: repeat;
 }
 
 .navbar{
@@ -105,13 +105,6 @@ strong{
 .box {
   padding: 0px 0px;
   vertical-align: middle !important;
-  -webkit-transition: all .2s ease-in-out;
-}
-
-/*#blah { -webkit-transition: all .2s ease-in-out; }*/
-.box:hover { 
-  -webkit-transform: scale(1.1);
-  z-index: 10;
 }
 
 .menu {
@@ -172,8 +165,8 @@ strong{
 
 #footer {
   min-height: 300px;
-  background-image: url(../img/navBG.jpg) !important;
-  background-repeat: repeat-y;
+  background-image: url(../img/triangles/triangles.png) !important;
+  background-repeat: repeat;
   margin-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -301,4 +294,109 @@ strong{
 
 .bottomNav{
   padding-top: 15px;
+}
+/*.box.grayscale{
+filter: grayscale(100%);
+
+-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: gray; 
+-webkit-transition: all .6s ease; 
+-moz-transition: all .6s ease;
+-o-transition: all .6s ease;
+transition: all .6s ease;
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); 
+}
+
+.box.grayscale:hover{
+filter: grayscale(0%);
+background-color: #8DE2E2;
+opacity: 0.9;
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+filter: grayscale(0%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}*/
+
+@-webkit-keyframes thumb {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(0.9); }
+  100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes thumb {
+  0% { -moz-transform: scale(1); }
+  50% { -moz-transform: scale(0.9); }
+  100% { -moz-transform: scale(1); }
+}
+@-o-keyframes thumb {
+  0% { -o-transform: scale(1); }
+  50% { -o-transform: scale(0.9); }
+  100% { -o-transform: scale(1); }
+}
+@keyframes thumb {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+.backbutton img:hover
+{
+  -webkit-animation-name: thumb;
+  -moz-animation-name: thumb;
+  -o-animation-name: thumb;
+  animation-name: thumb;
+  -webkit-animation-duration: 200ms;
+  -moz-animation-duration: 200ms;
+  -o-animation-duration: 200ms;
+  animation-duration: 200ms;
+  -webkit-transform-origin:50% 50%;
+  -moz-transform-origin:50% 50%;
+  -o-transform-origin:50% 50%;
+  transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 2;
+  -moz-animation-iteration-count: 2;
+  -o-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/*.siteLinks {
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.siteLinks:hover {
+  
+  border-top: 10px solid;
+  -webkit-transform: skew(3deg,3deg);
+     -moz-transform: skew(3deg,3deg);
+       -o-transform: skew(3deg,3deg);
+      -ms-transform: skew(3deg,3deg);
+          transform: skew(3deg,3deg);
+
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}*/
+.box { 
+  padding: 0px 0px; 
+  vertical-align: middle !important; 
+  -webkit-transition: all .4s ease; 
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+} 
+ 
+.box:hover {  
+  -webkit-transform: scale(1.1); 
+  z-index: 10; 
 }

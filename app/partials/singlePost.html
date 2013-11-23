@@ -13,6 +13,8 @@
 			<img class='img-responsive' src="{{base64.decode(news.newsImage)}}">
 		</div>
 		<div class='singlePostDetail row'>
+			<!-- <div ng-repeat="detail in details" class="col-md-4">  {{detail}}  </div> -->
+			<!-- <p ng-repeat="split in splitBox"> {{utf8.decode(base64.decode(detail))}} </p> -->
 			<p > {{utf8.decode(base64.decode(news.detail))}} </p>
 		</div>
 	</div>
@@ -25,6 +27,7 @@
 		<div ng-repeat="list in allNews | limitTo:noOfSideBarPost">
 	    <div class=""></div>
 	  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{list.id-1}}" class="thumbnail">
+	      <!-- <img src="{{base64.decode(list.newsImage)}}" height="100px" alt="{{utf8.decode(base64.decode(list.title))}}" class="sideBarListImg"> -->
 	      <span class=''><strong>{{utf8.decode(base64.decode(list.title))}}</strong></span>
 	    </a>
 	  </div>
@@ -33,5 +36,19 @@
     <a ng-disabled="{{prevDisabled}}" href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" type="button" class="btn btn-default btn-lg btn-block">Previous Post</a>
 		<a href="#/singleSite/:{{json}}/:{{siteID}}" type="button" class="btn btn-default btn-lg btn-block"> {{json}} {{}} </a>
 		<a ng-disabled="nextAvailable(noOfNews)" href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" type="button" class="btn btn-default btn-lg btn-block">Next Post</a>
+		<!-- <div class="col-sm-3">
+	    <div class=""></div>
+	  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{prevPostID}}" class="thumbnail">
+	      <img src="{{base64.decode(allNews[prevPostID].newsImage)}}" height="50px" alt="{{utf8.decode(base64.decode(allNews[prevPostID].title))}}" class="">
+	      <span class='listTitle'><strong>{{utf8.decode(base64.decode(allNews[prevPostID].title))}}</strong></span>
+	    </a>
+	  </div>
+		<div class="col-sm-3">
+	    <div class=""></div>
+	  	<a href="#/singleSite/:{{json}}/:{{siteID}}/singlePost/:{{nextPostID}}" class="thumbnail">
+	      <img src="{{base64.decode(allNews[nextPostID].newsImage)}}" height="50px" alt="{{utf8.decode(base64.decode(allNews[nextPostID].title))}}" class="">
+	      <span class='listTitle'><strong>{{utf8.decode(base64.decode(allNews[nextPostID].title))}}</strong></span>
+	    </a>
+	  </div> -->
 	</div>
 </div>

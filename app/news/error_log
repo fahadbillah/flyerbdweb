@@ -1,0 +1,210 @@
+[08-Nov-2013 14:22:17 America/Chicago] PHP Warning:  include(simple_html_dom.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 2
+[08-Nov-2013 14:22:17 America/Chicago] PHP Warning:  include(simple_html_dom.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 2
+[08-Nov-2013 14:22:17 America/Chicago] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'simple_html_dom.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 2
+[08-Nov-2013 14:22:17 America/Chicago] PHP Fatal error:  Call to undefined function file_get_html() in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 5
+[08-Nov-2013 14:45:27 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 14
+[09-Nov-2013 07:19:23 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[09-Nov-2013 16:01:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[09-Nov-2013 16:03:51 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[09-Nov-2013 23:59:13 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[09-Nov-2013 23:59:26 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/aljazeera.php on line 9
+[10-Nov-2013 03:06:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[10-Nov-2013 04:35:39 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 30
+[10-Nov-2013 04:44:01 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 29
+[10-Nov-2013 04:45:01 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 29
+[10-Nov-2013 04:46:30 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 29
+[10-Nov-2013 08:14:32 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 14
+[10-Nov-2013 09:41:44 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 31
+[10-Nov-2013 13:17:04 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 31
+[10-Nov-2013 13:55:18 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 13:56:00 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 13:58:16 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 14:52:06 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 14:56:24 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 14:57:13 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 14:58:42 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 15:00:41 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 15:23:09 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 69
+[10-Nov-2013 16:06:39 America/Chicago] PHP Fatal error:  Call to a member function getElementById() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 44
+[10-Nov-2013 16:09:39 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 20
+[10-Nov-2013 16:13:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 44
+[10-Nov-2013 16:17:10 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/noyadigonto.php on line 20
+[10-Nov-2013 16:34:18 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 45
+[10-Nov-2013 16:38:19 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 53
+[10-Nov-2013 16:43:20 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 53
+[10-Nov-2013 16:50:05 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 53
+[10-Nov-2013 16:58:55 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 53
+[10-Nov-2013 17:05:41 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 53
+[10-Nov-2013 17:33:37 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:38:14 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:40:14 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:42:18 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:51:31 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:56:19 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:57:21 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 50
+[10-Nov-2013 17:58:14 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 51
+[10-Nov-2013 18:04:23 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 51
+[10-Nov-2013 18:06:15 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 51
+[10-Nov-2013 18:06:37 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 51
+[10-Nov-2013 18:15:37 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 51
+[10-Nov-2013 23:56:45 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 35
+[11-Nov-2013 03:33:51 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 36
+[11-Nov-2013 06:31:10 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 61
+[11-Nov-2013 16:44:12 America/Chicago] PHP Warning:  file_get_contents(detailsnews.php?nssl=7312fc8f7f3b8269a723fca9af881389&amp;amp;nttl=12112013239116) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[11-Nov-2013 16:44:12 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/banglanews24.php on line 52
+[11-Nov-2013 16:48:22 America/Chicago] PHP Warning:  file_get_contents(detailsnews.php?nssl=7312fc8f7f3b8269a723fca9af881389&amp;amp;nttl=12112013239116) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[11-Nov-2013 16:48:22 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/banglanews24.php on line 52
+[11-Nov-2013 19:23:41 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 28
+[12-Nov-2013 00:51:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 35
+[13-Nov-2013 04:41:32 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/newstoday.php on line 32
+[13-Nov-2013 08:47:27 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 35
+[13-Nov-2013 09:52:47 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 35
+[13-Nov-2013 09:54:33 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 35
+[14-Nov-2013 02:23:44 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 28
+[14-Nov-2013 15:43:09 America/Chicago] PHP Warning:  file_get_contents(/akm-zakaria/40533.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[14-Nov-2013 15:43:09 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/priyo.php on line 49
+[15-Nov-2013 05:50:54 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/targetto/public_html/flyerbd.com/news/independent.php on line 83
+[16-Nov-2013 14:00:37 Asia/Dhaka] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[16-Nov-2013 14:23:37 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 28
+[17-Nov-2013 00:46:45 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 36
+[17-Nov-2013 00:47:12 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 14
+[17-Nov-2013 11:15:46 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 14
+[17-Nov-2013 11:16:29 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 14
+[17-Nov-2013 11:17:14 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 14
+[17-Nov-2013 11:18:44 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 14
+[17-Nov-2013 11:20:38 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 14
+[19-Nov-2013 00:12:31 Asia/Dhaka] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/inqilab.php on line 40
+[20-Nov-2013 06:07:14 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 14
+[20-Nov-2013 06:07:39 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/kalerkantho.php on line 14
+[20-Nov-2013 07:20:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/prothomalo.php on line 28
+[20-Nov-2013 09:08:11 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 28
+[20-Nov-2013 09:13:33 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 28
+[20-Nov-2013 09:28:02 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 28
+[20-Nov-2013 17:52:23 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 29
+[20-Nov-2013 17:54:10 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 13
+[20-Nov-2013 17:55:04 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/nayadiganta.php on line 29
+[20-Nov-2013 18:40:33 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/foxnews.php on line 48
+[22-Nov-2013 06:31:42 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 11
+[22-Nov-2013 06:31:42 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 06:34:42 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[22-Nov-2013 06:34:42 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 06:35:32 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 11
+[22-Nov-2013 06:35:32 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 06:35:36 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 11
+[22-Nov-2013 06:35:36 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 06:41:27 America/Chicago] PHP Fatal error:  Call to a member function load() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 11
+[22-Nov-2013 06:43:22 America/Chicago] PHP Fatal error:  Call to undefined function load() in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 11
+[22-Nov-2013 06:59:38 America/Chicago] PHP Fatal error:  Out of memory (allocated 262144) (tried to allocate 79 bytes) in Unknown on line 0
+[22-Nov-2013 07:12:36 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/simple_html_dom.php on line 75
+[22-Nov-2013 07:12:36 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 09:12:15 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 10:20:18 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 10:26:30 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 10:28:07 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 10:28:07 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 11:12:04 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 11:14:31 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 11:14:31 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 11:15:47 America/Chicago] PHP Warning:  file_get_contents(&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://...@bangla.net&quot;/&gt;
+
+&lt;link href=&quot;web/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;link href=&quot;favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	if (typeof jQuery == 'undefined')
+	{
+	  document.write(unescape(&quot;%3Cscript src='js/jquery-1.6.4.min.js' type='text/javascript'%3E%3C/script%3E&quot;));
+	}
+&lt;/script&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');&lt;/script&gt;
+&lt;scr in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 17
+[22-Nov-2013 11:15:47 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 23
+[22-Nov-2013 11:52:34 America/Chicago] PHP Fatal error:  Using $this when not in object context in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 20
+[22-Nov-2013 11:54:55 America/Chicago] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 29
+[22-Nov-2013 11:55:31 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 33
+[22-Nov-2013 11:56:15 America/Chicago] PHP Fatal error:  Call to a member function load_file() on a non-object in /home/targetto/public_html/flyerbd.com/news/ittefaq.php on line 28
+[23-Nov-2013 03:14:51 America/Chicago] PHP Fatal error:  Call to a member function find() on a non-object in /home/targetto/public_html/flyerbd.com/news/samakal.php on line 14

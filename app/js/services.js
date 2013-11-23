@@ -52,13 +52,7 @@ angular.module('flyerBDServices', []).
     };
   }])
   .factory('allSiteList', ['$http', function($http) {
-    return{
-      name: 'allSiteList',
-      readonly: false,
-      list: function(){
-        $http.get('news/allSites.json').success(function(data) {
-          return 'hello';
-        });
-      }
-    }    
+    $http.get('news/allSites.json').success(function(data) {
+      return data;
+    });
   }]);
