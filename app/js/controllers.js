@@ -132,7 +132,7 @@ angular.module('flyerBDControllers', [])
     $scope.base64 = base64;
     $scope.utf8 = utf8;
   }])
-  .controller('NavBarCtrl',['$scope', function($scope){
+  .controller('NavBarCtrl',['$scope','$route', function($scope,$route){
   	$scope.navs = [
 	  	{
 	  		"label":"Home",
@@ -141,9 +141,49 @@ angular.module('flyerBDControllers', [])
 	  	}
   	];
   	$scope.serial = 'id';
+    $scope.refresh = function($window){
+      $route.reload();
+    };
   }])
-  .controller('FooterCtrl',['$scope', function($scope){
-
+  .controller('FooterCtrl',['$scope', '$sce', function($scope, $sce){
+    var link = 'http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&width&layout=standard&action=like&show_faces=true&share=true&height=80';
+    $scope.likeURL = $sce.trustAsResourceUrl(link);
+    $scope.founders = [
+      {
+        "firstname" : "Fahad",
+        "lastname" : "Billah",
+        "nick" : "Fahad",
+        "email" : "fahadbillah@yahoo.com",
+        "img" : "fahad.jpg",
+        "facebook" : "https://www.facebook.com/fahadbillah",
+        "linkin" : "http://www.linkedin.com/pub/fahad-billah/71/6/316",
+        "twitter": "",
+        "googleplus": ""
+      },
+      {
+        "firstname" : "G.A.N.",
+        "lastname" : "Mahmud",
+        "nick" : "GAN",
+        "email" : "gan.mahmud@gmail.com",
+        "img" : "gan.jpg",
+        "facebook" : "https://www.facebook.com/GANMAHMUD",
+        "linkin" : "",
+        "twitter": "",
+        "googleplus": ""
+      },
+      {
+        "firstname" : "Monjurul",
+        "lastname" : "Morshed",
+        "nick" : "Soudi",
+        "email" : "murshed.soudi@gmail.com",
+        "img" : "soudi.jpg",
+        "facebook" : "https://www.facebook.com/mmsoudi",
+        "linkin" : "",
+        "twitter": "",
+        "googleplus": ""
+      }
+    ];
+    $scope.predicate = "-firstname";
   }])  
   .controller('FeedbackCtrl',['$scope', '$http', function($scope,$http){
     $scope.feedbackFormShow = false;
@@ -200,4 +240,19 @@ angular.module('flyerBDControllers', [])
         $scope.feedbackConfirmation.style = "alert alert-danger";
       });
     };
+  }])
+  .controller('FBCtrl',['$scope', '$sce', function($scope, $sce){
+    
   }]);
+  /*$sce.trustAsResourceUrl('http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&width&layout=standard&action=like&show_faces=true&share=true&height=80');
+    $http('GET', 'http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflyerbd&width&layout=standard&action=like&show_faces=true&share=true&height=80')
+    .success(function(data){
+      // success
+      //$scope.FBLikeButtonStatus = status;
+      $scope.FBLikeButton = data;
+    })
+    .success(function(data){
+      // error
+      //$scope.FBLikeButtonStatus = status;
+      $scope.FBLikeButton = data;
+    });*/

@@ -1,24 +1,23 @@
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top customNav" role="navigation" ng-controller="NavBarCtrl">
+<nav class="navbar navbar-fixed-top customNav" role="navigation" ng-controller="NavBarCtrl">
   <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand backbutton" href="#/home">
-      <img src="img/flyerBDLogo.png" height="50" width="95">
+    </button> -->
+    <a class="logo" href="#/home">
+      <img src="img/flyerBDLogo.png" height="62" width="124">
     </a>
-  </div>
-
+    <a class="pull-right homeIcon" href="#/home">
+      <i class="fa fa-home fa-3x"></i>
+    </a>
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav pull-right">
       <li ng-repeat="nav in navs | orderBy:serial" class=" {{nav.url | navActive}} "><a href=" {{nav.url}} ">{{nav.label}}</a></li>
-      <!-- <li class="active"><a href="#/view1">view1</a></li>
-      <li class=""><a href="#/view2">view2</a></li> -->
-    </ul>
+    </ul> -->
+      <!-- <li><input class='btn btn-primary btn-small' type='button' ng-click='refresh()' value='Refresh' ></li> -->
     <!-- <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">

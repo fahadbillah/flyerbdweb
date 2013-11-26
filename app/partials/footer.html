@@ -1,20 +1,29 @@
 <div id="footer" class="navbar-inverse" ng-controller="FooterCtrl">
   <div class="container footerIntro">
-    <div class="col-md-4">
+    <div class="col-md-4 footerLeft">
       <p>Built with <strong>Love</strong> and <strong>AngularJS</strong>. </p>
     </div>
-    <div class="col-md-4">
-      
-   </div>
-    <div class="col-md-4 row">
-      <h2>About Us</h2>
-      <div class="col-sm-6 col-md-4">
+    <div class="col-md-4 footerMiddle">
+      <h4>Like Our Facebook Page</h4>
+      <iframe class="FBLike" ng-src="{{likeURL}}"></iframe>
+    </div>
+    <div class="col-md-4 footerRight row">
+      <h4>About Us</h4>
+      <div class="col-sm-6 col-md-4" ng-repeat="founder in founders | orderBy:predicate:reverse">
         <div class="thumbnail aboutUs">
-          <img src="img/founders/soudi.jpg" alt="soudi" class="img-circle" width="100" height="100">
+          <img src="img/founders/{{founder.img}}" alt="{{founder.nick}}" class="img-circle" width="100" height="100">
           <div class="caption">
-            <a href="mailto:murshed.soudi@gmail.com"><h4>Soudi</h4></a>
+            <a href="mailto:{{founder.email}}"><h4>{{founder.nick}}</h4></a>
             <!-- <p>...</p>
             <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-6 col-md-4">
+        <div class="thumbnail aboutUs">
+          <img src="img/founders/gan.jpg" alt="gan" class="img-circle" width="100" height="100">
+          <div class="caption">
+            <a href="mailto:gan.mahmud@gmail.com"><h4>GAN</h4></a>
           </div>
         </div>
       </div>
@@ -23,8 +32,6 @@
           <img src="img/founders/gan.jpg" alt="gan" class="img-circle" width="100" height="100">
           <div class="caption">
             <a href="mailto:gan.mahmud@gmail.com"><h4>GAN</h4></a>
-            <!-- <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
           </div>
         </div>
       </div>
@@ -33,11 +40,9 @@
           <img src="img/founders/fahad.jpg" alt="soudi" class="img-circle" width="100" height="100">
           <div class="caption">
             <a href="mailto:billah22@gmail.com"><h4>Fahad</h4></a>
-            <!-- <p>...</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

@@ -13,11 +13,16 @@ body {
 }
 
 .view{
-  margin-top: 65px;
+  margin-top: 80px;
 }
 
 .active{
   /*border-bottom: 2px solid red;*/
+}
+
+.customNav{
+  background-image: url(../img/subtle_carbon/subtle_carbon_2.png) !important;
+  background-repeat: repeat;
 }
 
 .navbar-brand{
@@ -26,12 +31,19 @@ body {
 }
 
 .navbar-default{
-  background-image: url(../img/subtle_carbon/subtle_carbon_2.png) !important;
-  background-repeat: repeat;
 }
 
 .navbar{
   padding: 0px 5%;
+}
+
+.logo{
+  margin-left: 5%;
+}
+
+.homeIcon{
+  padding: 10px;
+  margin-right: 5%;
 }
 
 a {
@@ -168,6 +180,7 @@ strong{
   background-image: url(../img/triangles/triangles.png) !important;
   background-repeat: repeat;
   margin-top: 15px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
@@ -196,6 +209,23 @@ strong{
 
 .footerIntro p{
   padding: 30px 0px;
+}
+
+.footerLeft{
+  text-align: center;
+}
+
+.footerMiddle{
+  text-align: center;
+}
+
+.footerMiddle iframe{
+  padding: 10px;
+  background-color: rgba(247, 247, 247, 0.53);
+}
+
+.footerRight{
+  text-align: center;
 }
 
 .feedbackDiv{
@@ -242,6 +272,8 @@ strong{
 
 .animate-show {
   -webkit-transition:all linear 0.5s;
+  -moz-transition:all linear 0.5s;
+  -o-transition:all linear 0.5s;
   transition:all linear 0.5s;
   line-height:20px;
   opacity:1;
@@ -340,7 +372,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
   50% { transform: scale(0.9); }
   100% { transform: scale(1); }
 }
-.backbutton img:hover
+.logo img:hover
 {
   -webkit-animation-name: thumb;
   -moz-animation-name: thumb;
@@ -398,5 +430,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
  
 .box:hover {  
   -webkit-transform: scale(1.1); 
+  -moz-transform: scale(1.1); 
+  -o-transform: scale(1.1); 
+  transform: scale(1.1); 
   z-index: 10; 
+}
+
+.FBLike{
+  height: 100px;
+  border: 0px;
 }
