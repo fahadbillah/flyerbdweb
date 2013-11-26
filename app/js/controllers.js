@@ -31,7 +31,16 @@ angular.module('flyerBDControllers', [])
     $scope.holderSize = 150;
     $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', '$location', 'base64', 'utf8', function($scope,$http,$routeParams,$location,base64,utf8) {
+  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', '$location', '$window', 'base64', 'utf8', function($scope,$http,$routeParams,$location,$window,base64,utf8) {
+     var ua = $window.navigator.userAgent;
+     var  iphone = ua.indexOf('iPhone') || ua.indexOf('iPod'),
+          ipad = ua.indexOf('iPad'),
+          ios = iphone || ipad,
+          // Detect if this is running as a fullscreen app from the homescreen
+          fullscreen = $window.navigator.standalone,
+          android = ua.indexOf('Android'),
+          lastWidth = 0;
+
     $scope.spinner = false;
     $scope.prevDisabled = false;
     $scope.nextDisabled = false;
@@ -52,12 +61,20 @@ angular.module('flyerBDControllers', [])
     $scope.lowerLimit = 0;
     $scope.noOfSideBarPost = 10;
     $scope.prevPost = function(){
-      if($scope.prevPostID>=0)
-        $location.path(prev);
+      if(ios>0 || android>0){
+        if($scope.prevPostID>=0)
+          $location.path(prev);
+      }
+      else
+        return 0;
     };
     $scope.nextPost = function(input){
-      if($scope.nextPostID<input)
-        $location.path(next);
+      if(ios>0 || android>0){
+        if($scope.nextPostID<input)
+          $location.path(next);
+      }
+      else
+        return 0;
     };
     $http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
