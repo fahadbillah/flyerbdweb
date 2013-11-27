@@ -29,7 +29,7 @@ foreach ($allLink as $link)
 	foreach($title as $elemet2)
 	{
 		$titleBeta=$elemet2->plaintext;
-		$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
+		$titleBeta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $titleBeta);
 		$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 	}
 
@@ -78,10 +78,10 @@ foreach($detail as $elemet3){
 }
 $pos2 = strrpos($txt_beta, ".")+1;
 $filtDetail = substr($txt_beta, 0, $pos2);
-$filtDetail2=str_replace ( "&nbsp;" , "" , $filtDetail);
+$filtDetail2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $filtDetail);
 $txt=base64_encode($filtDetail2); ########## checkpoint #########
 
-$temparr= array('id'=>$counter,'title' => $newsTitle,'pubDate'=>$timeStamp, 'newsImage'=>$pic, 'detail'=>$txt);
+$temparr= array('url'=>$link, 'id'=>$counter,'title' => $newsTitle,'pubDate'=>$timeStamp, 'newsImage'=>$pic, 'detail'=>$txt);
 $counter++;
 array_push($AllContent, $temparr);
 }

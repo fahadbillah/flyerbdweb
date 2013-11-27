@@ -27,7 +27,7 @@ foreach ($allLink as $link)
 	foreach($title as $elemet2)
 	{
 		$titleBeta=$elemet2->plaintext;
-		$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
+		$titleBeta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $titleBeta);
 		$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 		break;
 	}
@@ -61,9 +61,9 @@ foreach ($allLink as $link)
 		$newsDetail=$elemet3->plaintext;
 		$txt_beta1.=$newsDetail; ########### checkpoint ###########
 	}
-	$txt_beta2=str_replace ( "&nbsp;" , "" , $txt_beta1);
+	$txt_beta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $txt_beta1);
 	$txt=base64_encode($txt_beta2);
-	$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+	$temparr= array('url'=>$link, 'id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 
 	array_push($AllContent, $temparr);
 	$counter++;

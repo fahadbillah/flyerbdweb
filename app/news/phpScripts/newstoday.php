@@ -65,7 +65,7 @@ foreach ($allLink as $link)
 	{
 		$txt=base64_encode($elemet3->plaintext);
 }	//echo $txt."<br>";
-$temparr= array('id' => $counter,'title' => $newsTitle, 'newsImage'=>$full_pic, 'detail'=>$txt);
+$temparr= array('url'=>$link, 'id' => $counter,'title' => $newsTitle, 'newsImage'=>$full_pic, 'detail'=>$txt);
 array_push($AllContent, $temparr);
 $counter++;
 //break;

@@ -2,7 +2,7 @@
 include("simple_html_dom.php");
 
 // Retrieve the DOM from a given URL
-$html = file_get_html('http://kalerkantho.com');
+$html = file_get_html('http://www.kalerkantho.com/index.php');
 //$c = 0;
 $allLink = array();
 $AllContent = array();
@@ -69,7 +69,7 @@ foreach ($allLink as $link)
 	}
 	$txt_beta2=str_replace( "&nbsp;" , "" , $txt_2);
 	$txt=base64_encode($txt_beta2);
-	$temparr= array('id' => $counter,'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+	$temparr= array('url'=>$link, 'id' => $counter,'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 	array_push($AllContent, $temparr);
 	$counter++;
 }

@@ -3,35 +3,41 @@
 /* Controllers */
 		
 angular.module('flyerBDControllers', [])
-  .controller('AllSitesCtrl', ['$scope', '$http', 'getRandomSpan', function($scope,$http,getRandomSpan) {
+  .controller('AllSitesCtrl', ['$scope', 'getRandomSpan','newsJson', function($scope,getRandomSpan,newsJson) {
     $scope.spinner = false;
-    $http.get('news/allSites.json').success(function(data) {
+
+    newsJson.getJson('allSites').then(function(data) {           // Angular promise
+      $scope.spinner = true;
+      $scope.sites = data;
+      $scope.length = data.length;
+    });
+    /*$http.get('news/allSites.json').success(function(data) {
       $scope.spinner = true;
 	    $scope.sites = data;
       $scope.length = data.length;
-	  });
+	  });*/
     $scope.spanSizes = 3;
 	  $scope.holderSize = 200;
-	  $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SingleSiteCtrl', ['$scope', '$http','$routeParams', 'getRandomSpan', 'base64', 'utf8', 'allSiteList', function($scope,$http,$routeParams,getRandomSpan,base64,utf8,allSiteList) {
-    /*$scope.allSiteList = allSiteList();*/
+  .controller('SingleSiteCtrl', ['$scope','$routeParams', 'getRandomSpan', 'base64', 'utf8', 'allSiteList','newsJson', function($scope,$routeParams,getRandomSpan,base64,utf8,allSiteList,newsJson) {
     $scope.spinner = false;
     $scope.siteID = $routeParams["id"].substr(1);
     $scope.json = $routeParams["site"].substr(1);
-    $http.get('news/'+$scope.json+".json").success(function(data) {
+    newsJson.getJson($scope.json).then(function(data) {           // Angular promise
       $scope.spinner = true;
       $scope.news = data;
       $scope.length = data.length;
-      $scope.spanSizes = getRandomSpan($scope.length);
-      console.log($scope.spanSizes);
     });
+    //$scope.news = newsJson($scope.json);
+    /*$http.get('news/'+$scope.json+".json").success(function(data) {
+      $scope.spinner = true;
+      $scope.news = data;
+      $scope.length = data.length;
+    });*/
     $scope.base64 = base64;
     $scope.utf8 = utf8;
-    $scope.holderSize = 150;
-    $scope.holderLink = 'http://placehold.it/'+$scope.holderSize+'x'+$scope.holderSize;
   }])
-  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', '$location', '$window', 'base64', 'utf8', function($scope,$http,$routeParams,$location,$window,base64,utf8) {
+  .controller('SinglePostCtrl', ['$scope', '$http','$routeParams', '$location', '$window', 'base64', 'utf8','newsJson', function($scope,$http,$routeParams,$location,$window,base64,utf8,newsJson) {
      var ua = $window.navigator.userAgent;
      var  iphone = ua.indexOf('iPhone') || ua.indexOf('iPod'),
           ipad = ua.indexOf('iPad'),
@@ -76,13 +82,19 @@ angular.module('flyerBDControllers', [])
       else
         return 0;
     };
-    $http.get('news/'+$scope.json+".json").success(function(data) {
+    newsJson.getJson($scope.json).then(function(data) {           // Angular promise
+      $scope.spinner = true;
+      $scope.news = data[$scope.postID];
+      $scope.allNews = data;
+      $scope.noOfNews = data.length;
+    });
+    /*$http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
       $scope.news = data[$scope.postID];
       $scope.allNews = data;
       $scope.noOfNews = data.length;
 
-      console.log($scope.allNews);
+      console.log($scope.allNews);*/
       /*var d = utf8.decode(base64.decode($scope.news.detail));
       d.trim();
       console.log(d.length);
@@ -145,11 +157,11 @@ angular.module('flyerBDControllers', [])
      /* console.log(dArray);
       console.log($scope.details);*/
       //$scope.details = dArray;
-    });
+    /*});*/
     $scope.base64 = base64;
     $scope.utf8 = utf8;
   }])
-  .controller('NavBarCtrl',['$scope','$route', function($scope,$route){
+  .controller('NavBarCtrl',['$scope','$route','$location','$routeParams', function($scope,$route,$location,$routeParams){
   	$scope.navs = [
 	  	{
 	  		"label":"Home",
@@ -157,6 +169,13 @@ angular.module('flyerBDControllers', [])
 	  		"id":1
 	  	}
   	];
+    $scope.upButtonShow = false;
+    //alert($routeParams["post"]);
+    if($routeParams["post"]!=="undefined"){
+      $scope.upButtonShow = true;
+    }
+
+    $scope.rawPath = $location.path().substr(0,$location.path().lastIndexOf(':')+1);
   	$scope.serial = 'id';
     $scope.refresh = function($window){
       $route.reload();

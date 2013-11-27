@@ -6,6 +6,8 @@ angular.module('flyerBD', [
   'ngResource',
   'ngAnimate',
   'ngTouch',
+  'angulartics',
+  'angulartics.google.analytics',
   'flyerBDFilters',
   'flyerBDServices',
   'flyerBDDirectives',

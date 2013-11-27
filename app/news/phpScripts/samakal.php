@@ -36,7 +36,7 @@
 		$title = $singlePost->find("#hl2");
 		foreach($title as $elemet2){
 			$newsTitle_beta1=$elemet2->plaintext;
-			$newsTitle_beta2=str_replace ( "&nbsp;" , "" , $newsTitle_beta1);
+			$newsTitle_beta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $newsTitle_beta1);
 			$newsTitle=base64_encode($newsTitle_beta2);
 			
 		}
@@ -84,10 +84,10 @@
 			$txt_beta1.=$elemet3->plaintext;
 			
 		}*/
-		$txt=str_replace( "&nbsp;" , "" , $txt);
+		$txt=preg_replace("/&#?[a-z0-9]{2,8};/i","", $txt);
 		$txt=base64_encode($txt);
 		
-		$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+		$temparr= array('url'=>$link, 'id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 		array_push($AllContent, $temparr);
 		$counter++;
 		//echo $link.' OK<br>';

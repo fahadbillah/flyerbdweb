@@ -29,7 +29,7 @@ foreach ($allLink as $links)
 
 
         $newsTitle_beta2 = $newsTitle_beta1[0]->plaintext;
-        $newsTitle_beta3=str_replace ( "&nbsp;" , "" , $newsTitle_beta2);
+        $newsTitle_beta3=preg_replace("/&#?[a-z0-9]{2,8};/i","",$newsTitle_beta2);
         $newsTitle=base64_encode($newsTitle_beta3);
 
         //image section is not showing the src despite having to visible error
@@ -57,11 +57,11 @@ foreach ($allLink as $links)
         
         //detail news
         $detail = $singlePost->find('.jw_detail_content_holder');
-        $txt_beta1= $detail[0]->plaintext;
-        $txt_beta2=str_replace ( "&nbsp;" , "" , $txt_beta1);
+        $txt_beta1= $detail[0]->plaintext."&quot;";
+        $txt_beta2=preg_replace("/&#?[a-z0-9]{2,8};/i","",$txt_beta1);
         $txt=base64_encode($txt_beta2);
         
-        $temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+        $temparr= array('url'=>$link, 'id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
         //print_r($temparr);
         array_push($AllContent, $temparr);
         $counter++;

@@ -29,7 +29,7 @@ $AllContent = array();
 		foreach($title as $elemet2){
 			//$newsTitle=base64_encode($elemet2->plaintext);
 			$titleBeta=$elemet2->plaintext;
-			$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta);
+			$titleBeta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $titleBeta);
 			$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 //echo $newsTitle."<br>";
 		}
@@ -58,9 +58,9 @@ $AllContent = array();
 		$dtl=$elemet3->plaintext;
 		$txt_beta1.=$dtl;
 	}
-	$txt_beta2=str_replace("&nbsp;" , "" , $txt_beta1);
+	$txt_beta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $txt_beta1);
 	$txt=base64_encode($txt_beta2);
-	$temparr= array('id'=>$counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+	$temparr= array('url'=>$link, 'id'=>$counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 //echo "<br>".$txt;
 	$counter++;
 	array_push($AllContent, $temparr);

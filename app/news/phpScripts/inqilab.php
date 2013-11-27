@@ -3,13 +3,14 @@ include("simple_html_dom.php");
 date_default_timezone_set('Asia/Dhaka'); // CDT
 
 $info = getdate();
-$date = str_pad($info['mday'], 2, "0", STR_PAD_LEFT);
+$dateBeta=$info['mday'];
+$date = str_pad($dateBeta, 2, "0", STR_PAD_LEFT);
 $date .= "/";
 $month = $info['mon']."/";
 $year = $info['year']."/";
 
 $DynamicLink="http://dailyinqilab.com/".$year.$month.$date;
-
+echo $DynamicLink;
 $homeLink=$DynamicLink."index.php";
 // Retrieve the DOM from a given URL
 $html = file_get_html($homeLink);
@@ -40,7 +41,7 @@ foreach ($allLink as $link) {
 	foreach($title as $elemet2){
 		//$newsTitle=base64_encode($elemet2->plaintext);
 		$titleBeta1=$elemet2->plaintext;
-		$titleBeta2=str_replace ( "&nbsp;" , "" , $titleBeta1);
+		$titleBeta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $titleBeta1);
 		$newsTitle=base64_encode($titleBeta2); ########## checkpoint #########
 	}
 
@@ -66,10 +67,10 @@ foreach ($allLink as $link) {
 
 	foreach($detail as $elemet3){
 		$txt_beta1=$elemet3->plaintext;
-		$txt_beta2=str_replace( "&nbsp;" , "" , $txt_beta1);
+		$txt_beta2=preg_replace("/&#?[a-z0-9]{2,8};/i","", $txt_beta1);
 		$txt=base64_encode($txt_beta2);
 	}
-	$temparr= array('id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
+	$temparr= array('url'=>$link, 'id' => $counter, 'title' => $newsTitle, 'newsImage'=>$pic, 'detail'=>$txt);
 	array_push($AllContent, $temparr);
 	$counter++;
 }

@@ -55,4 +55,25 @@ angular.module('flyerBDServices', []).
     $http.get('news/allSites.json').success(function(data) {
       return data;
     });
+  }])
+  .factory('newsJson', ['$http', '$q', function($http, $q) {               // Angular Service Declaration
+      return {
+          getJson: function(sitename) {
+              var d = new Date();
+              var n = d.getMinutes();
+              var t = (n<30)? 0 : 1;
+              var deferred = $q.defer();                       // Deferred Object Declaration
+              if (sitename=='allSites') {
+                var link = "news/"+sitename+".json";
+              } else{
+                var link = "news/"+sitename+".json?time="+t;
+              };
+              $http.get(link).success(function(data) {   // Asynchronous Service calling
+                   deferred.resolve(data);
+              }).error(function(){
+                   deferred.reject();
+              });
+          return deferred.promise;
+       }
+     };
   }]);
