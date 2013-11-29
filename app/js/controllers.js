@@ -88,6 +88,14 @@ angular.module('flyerBDControllers', [])
       $scope.allNews = data;
       $scope.noOfNews = data.length;
     });
+    newsJson.getJson('allSites').then(function(data) {  
+      for(var i=0;i<data.length;i++){         // Angular promise
+        if(data[i].json == $scope.json){
+          $scope.siteName = data[i].name;
+          break;
+        }
+      }
+    });
     /*$http.get('news/'+$scope.json+".json").success(function(data) {
       $scope.spinner = true;
       $scope.news = data[$scope.postID];
